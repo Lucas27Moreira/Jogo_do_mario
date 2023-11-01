@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+	background-color: rgb(50, 48, 202);
+	height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative; 
+}
+#card {
+    width: 100%;
+    height: 800px;
+    max-width: 1000px;
+    position: absolute; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#card img{
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+#botao1 {
+	display: block;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    outline: none;
+    border: 5px solid black;
+    border-radius:10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.7);   
+}
+#botao1:hover {
+	background-color: red;
+}
+.modal{
+	display: none; /* Hidden by default */
+  	position: relative; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+    padding: 10px;
+  	width: 100%; /* Full width */
+  	height: 100vh; /* Full height */
+  	overflow: auto; /* Enable scroll if needed */
+  	background-color: rgb(50, 48, 202);	
+}
+.modal-content {
+    background-image: url("imgs/fundo.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    position: relative; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.close {
+    color: black;
+    position:absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+#botoes button {
+	display: inline-block;
+	width: 80px;
+    height: 30px;
+    font-size: 16px;
+    font-family: arial,helvetica,sans-serif;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 0, 0, 7);
+}
+#botoes button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+ #jogador{
+     margin-right: 5px;
+}
+#jogador,#level {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 3px 10px 3px;
+    display:inline-block;
+    width: 100px;
+}
+/* criando bolinhas*/
+.moeda {
+	width: 40px;
+    height:40px;
+    position: absolute;
+}
+
+/* fundo da areana*/
+#arena {
+    height: 700px;
+    width:90%;
+    position: relative;
+    margin: auto;
+}
